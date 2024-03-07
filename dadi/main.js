@@ -33,14 +33,18 @@ roll.addEventListener('click', function(){
     const randomNumPc = Math.floor(Math.random()*6)+1 ;
     numberPc.push(randomNumPc) ;
 
+
     // STAMPO IN CONSOLE L'ESITO
 
     console.log('Lancio Giocatore: ' + numberUser , 'Lancio PC: ' + numberPc)
 
 
+    
     // 1. SE IL NUMERO DELL'UTENTE numberUser E' MAGGIORE DEL NUMERO DEL PC numberPc -> STAMPA 'HAI VINTO!, Sei Contento?'
     // 2. ALTRIMENTI SE IL NUMERO DELL'UTENTE numberUser E' STRETTAMENTE UGUALE (===) DEL NUMERO DEL PC numberPc -> 'RIPROVIAMO!'
     // 3. ALTRIMENTI -> STAMPA 'HAI PERSO!, Sfigato!'
+
+
     if(numberUser > numberPc){
         console.log('HAI VINTO!, Sei Contento?')
     } else if(numberUser === numberPc){ 
